@@ -34,8 +34,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:onClick="runCallMap"
         android:text="OK"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapLat2" />
+        app:layout_constraintTop_toBottomOf="@+id/mapLabel" />
+
+    <EditText
+        android:id="@+id/mapLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="พิมพ์ชื่อสถานที่"
+        app:layout_constraintTop_toBottomOf="@+id/mapLat2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="24dp" />
 </android.support.constraint.ConstraintLayout>
