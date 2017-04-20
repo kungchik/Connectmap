@@ -23,7 +23,7 @@ public class CallMap extends AppCompatActivity {
         String lat = latitude.getText().toString().trim();
         String longs = longtitude.getText().toString().trim();
 
-        Uri location = Uri.parse("http://maps.google.com/maps?z=10&q=loc:13.759754,100.541522(ศูนย์รางน้ำ)");
+        Uri location = Uri.parse("http://maps.google.com/maps?z=10&q=loc:"+lat+","+longs+"("+mlabel+")");
 
         Intent mapIntent = new Intent(Intent.ACTION_VIEW,location);
         //mapIntent.setPackage("con.google.android.apps.maps");//ใช้ไม่ได้กับgenimotion ใช้สำหรับมือถือandroid
